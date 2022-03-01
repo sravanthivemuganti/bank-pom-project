@@ -15,6 +15,7 @@ public class LoginTest extends BaseTest implements LoginConstants{
 	driver.get(BASEURL);
 	LoginPage page= new LoginPage(driver);
 	page.setUserIdElement(USERID);
+	System.out.println("USERID:: "+USERID);
 	page.setPassworElement(PASSWORD);
 	page.getLoginButtonElement();
 	SoftAssert sa=new SoftAssert();
